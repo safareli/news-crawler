@@ -1,0 +1,44 @@
+{
+  "name": "news-crawler",
+  "description": "news-crawler for top.ge",
+  "version": "0.1.0",
+  "homepage": "https://github.com/safareli/news-crawler",
+  "author": {
+    "name": "irakli safareli",
+    "email": "i.safareli@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/safareli/news-crawler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/safareli/news-crawler/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/safareli/news-crawler/blob/master/LICENSE"
+    }
+  ],
+  "main": "lib/news-crawler",
+  "bin": {
+      "news-crawler": "bin/news-crawler.js"
+  },
+  "engines": {
+      "node": ">= 0.10.26",
+      "npm": ">=1.4.3"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "~1.10.0",
+    "chai": "~1.8.0",
+    "gulp": "~3.5.0",
+    "gulp-jshint": "~1.3.4",
+    "gulp-mocha": "~0.4.1",
+    "jshint-stylish": "~0.1.5"
+  },
+  "keywords": []
+}
