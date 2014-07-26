@@ -25,7 +25,7 @@ gulp.task('mocha', function () {
   return gulp.src('./test/*.js')
     .pipe(mocha({
       globals: ['chai'],
-      timeout: 6000,
+      timeout: 100*1000,
       ignoreLeaks: false,
       ui: 'bdd',
       reporter: 'spec'
@@ -37,9 +37,7 @@ gulp.task('watch', function () {
   gulp.watch(['./lib/**/*.js', './test/**/*.js'], ['jshint']);
 });
 
-gulp.task('test', function () {
-  gulp.run('mocha', function () {});
-});
+gulp.task('test', ['mocha']);
 
 // The default task (called when you run `gulp` from cli)
 gulp.task('default', ['jshint', 'mocha', 'watch']);
