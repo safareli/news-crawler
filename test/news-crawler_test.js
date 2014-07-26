@@ -7,7 +7,7 @@
  */
 
 'use strict';
-/*
+
 var chai = require('chai'),
     chaiAsPromised = require("chai-as-promised"),
     crawler = require('../lib/news-crawler.js'),
@@ -20,12 +20,7 @@ chai.should();
 describe('news-crawler module', function(){
     describe('#getUrlsById()', function(){
         it('should return array of urls', function(){
-            [].should.satisfy(function(result) {
-                console.log('[]',result.length);
-                return true;
-            });
             return Q.all(data.getUrlsById.map(function(args,i){
-                console.log('starting request #',i,' args:',args);
                 return crawler.getUrlsById.apply(crawler,args);
             }).reduce(function(promises,promise){
                 return promises.concat([
@@ -52,8 +47,6 @@ describe('news-crawler module', function(){
                     promise.should.eventually.have.keys(keys)
                 ]);
             },[]));
-
         });
     });
 });
-*/
