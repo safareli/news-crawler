@@ -33,7 +33,8 @@
   },
   "dependencies": {
     "jsdom": "^0.11.1",
-    "q": "^1.0.1"
+    "q": "^1.0.1",
+    "moment": "^2.7.0"
   },
   "devDependencies": {
     "chai-as-promised": "^4.1.1",
