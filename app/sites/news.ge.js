@@ -1,8 +1,11 @@
 module.exports = {
+  urlFilter: {
+    startsWith:'http://news.ge/ge/news/story'
+  },
 	urlExtractors: [{
 		extractor:'topge',
-		id: '123456',
-		minViews: 50
+		id: 77811,
+		minViews: 20
 	}],
 	dataExtractors: {
 		date:{
@@ -10,13 +13,8 @@ module.exports = {
 			selector: '.info-date',
 			func: 'text',
 			args: [],
-			format: 'DD MMMM HH:mm'
+			format: 'DD MMMM HH:mm',
 			lang: 'ka'
-		},
-		category:{
-			extractor:'jsimple',
-			selector:'.cufonGeo',
-			func:'text'
 		},
 		category:{
 			extractor:'jsimple',
@@ -31,13 +29,13 @@ module.exports = {
 			extractor:'ogtag',
 			name:'title'
 		},
-		description:{
-			extractor:'ogtag',
-			name:'description'
-		},
 		url:{
 			extractor:'ogtag',
 			name:'url'
+		},
+		description:{
+			extractor:'ogtag',
+			name:'description'
 		}
 	}
 };
