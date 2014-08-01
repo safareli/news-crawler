@@ -1,6 +1,6 @@
 module.exports = {
 	urlExtractors: [{
-		extractor:'topGe',
+		extractor:'topge',
 		id: '123456',
 		minViews: 50
 	}],
@@ -14,29 +14,29 @@ module.exports = {
 			lang: 'ka'
 		},
 		category:{
-			extractor:'jSimple',
+			extractor:'jsimple',
 			selector:'.cufonGeo',
 			func:'text'
 		},
 		category:{
-			extractor:'jSimple',
+			extractor:'jsimple',
 			selector:'.cufonGeo',
 			func:'text'
 		},
 		image:{
-			extractor:'ogTag',
+			extractor:'ogtag',
 			name:'image'
 		},
 		title:{
-			extractor:'ogTag',
+			extractor:'ogtag',
 			name:'title'
 		},
 		description:{
-			extractor:'ogTag',
+			extractor:'ogtag',
 			name:'description'
 		},
 		url:{
-			extractor:'ogTag',
+			extractor:'ogtag',
 			name:'url'
 		}
 	}
